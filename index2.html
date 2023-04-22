@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlo Sorro</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="index1.html">About</a>
+            <a href="index2.html">Contact</a>
+        </div>
+        <script>
+            const menu = document.getElementById('menu');
+            const navbar = document.getElementById('navbar');
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('fa-times');
+                navbar.classList.toggle('navbar-toggle');
+            })
+        </script>
+    </header>
+    <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;Contact&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
+    </button>
+    <p>Kindly leave a message for feedbacks, recommendations and such, Thank you!</p>
+    <p2> Here are my social media links</p2>
+    <a href="https://www.facebook.com/crl.srr.355?mibextid=LQQJ4d" class="fa fa-facebook"><i class="ri-facebook-inline"></i></a>
+    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fcarlo_says_so%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR2siMlIE7FfazriV1qPQbZhVYr8ffM11gBfrQHOeElyMi7U-4mQ6iGYuMY&h=AT2Tg-_BVUQLNaFJNJlWJc6CVV0UxPwZ7d3k9tGf2-kzfjHJ_3tlbfVgcE7fxCn21VCemmZnPZLLiOBprHuQZK1oyJpH90IVv8MujR1DlX1of1YDuz-UCvFpIfIU9qoxNnTO_7juZYzgTZlbCEOaHg" class="fa fa-instagram"><i class="ri-instagram-line"></i></a>
+    <a href="https://twitter.com/crlsrr01" class="fa fa-twitter"><i class="ri-twitter-line"></i></a>
+</body>
+</html>

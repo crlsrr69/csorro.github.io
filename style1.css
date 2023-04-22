@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(54, 15, 15);
+  }
+  .logo {
+    font-family: "Chivo Mono", monospace;
+    display: flex;
+  }
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+    transition: 0.5s ease;
+  }
+  .logo:hover {
+    color:lightseagreen;
+  }
+  .logo:hover:not(:hover) {
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+  }
+  header {
+      font-size: small;
+      font-style: inherit;
+  }
+  header {
+    position: relative;
+    left: 100px;
+    top: 50px;
+  }
+  #menu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    background-color: lightseagreen;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 27;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+  }
+  #menu.fa-times {
+    transform: rotate(-180deg);
+  }
+  #navbar {
+    position: fixed;
+    top: 1.2rem;
+    right: 2.2rem;
+    border: 0.1rem solid lightseagreen;
+    padding: 1rem 1.5rem 1rem 1rem;
+    border-radius: 1rem;
+    z-index: 4;
+    transform: scale(0);
+    opacity: 0; 
+    transform-origin: top right;
+    transition: : all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+  }
+  #navbar.navbar-toggle {
+    transform: scale(1);
+    opacity: 1;
+  
+  }
+  #navbar a {
+    display: block;
+    padding: 0.5rem 7rem 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+  }
+  #navbar a:hover {
+    color: white;
+    background-color: lightseagreen;
+    transition: all 1s ease;
+  }
+  .button {
+    margin: 50px;
+    top: 60px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: lightseagreen;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  .buttton {
+    padding-right: 30px;
+    padding-left: 80px;
+  }
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+ .button {
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
